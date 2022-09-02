@@ -46,4 +46,4 @@ API自动化测试,需要校验/断言数据正确性，有时则需要访问数
 }
 `
 
-![img.png](img.png)
+<img width="1003" alt="image" src="https://user-images.githubusercontent.com/81615348/188116427-305a795f-9355-4809-977e-40910aaa45f9.png">
