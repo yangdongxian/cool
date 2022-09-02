@@ -1,0 +1,9 @@
+# 忽略文件
+*/.settings/
+*/.DS_Store
+.DS_Store
+*/.idea/
+.idea/
+*.log
+glide.lock
+*/vendor
