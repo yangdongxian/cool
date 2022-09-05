@@ -12,18 +12,20 @@ API自动化测试,需要校验/断言数据正确性，有时则需要访问数
 ***
 * golang 使用gin web框架
 
+项目目录介绍
+
 ### 使用说明
 * .env配置mysql连接信息
 * 提供query、execute接口
 * 请求参数
 
-`
+
 {
 "env":"pro",
 "db_name":"db",
 "sql":"select * from wx_tokens limit 2;"
 }
-`
+
 
 
 *返回参数 json格式
