@@ -3,6 +3,7 @@ package controller
 import (
 	"cool/common"
 	"cool/dao"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -26,7 +27,7 @@ func (obj *mysqlObject) Query(context *gin.Context) {
 		response := common.ErrorResponse(101, "Failed to process request", err.Error(), common.Empty{})
 		context.JSON(http.StatusBadRequest, response)
 	}
-
+	fmt.Println("parameter:", parameter.Sql)
 	ret := obj.mysqlObj.Query(parameter.Sql)
 	//fmt.Printf("query:%#v\n",ret)
 	response := common.Response(100, "OK", ret)

@@ -7,6 +7,7 @@ import (
 
 func main() {
 	defer config.CloseDatabaseConnection(config.DB)
+	defer config.RedisPool.Close()
 
 	router.InitApp()
 }

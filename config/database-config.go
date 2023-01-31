@@ -32,7 +32,7 @@ func SetupDatabaseConnectionDB() *sql.DB {
 
 	pErr := db.Ping()
 	if pErr != nil {
-		fmt.Printf("database DB object is ping to failed,error:%v", pErr)
+		fmt.Printf("database DB object is ping to failed,error:%v \n", pErr)
 		return nil
 	}
 	return db
